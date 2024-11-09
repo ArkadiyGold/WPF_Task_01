@@ -7,13 +7,17 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="600" Width="1000">
     <Grid Margin="0,0,2,3">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="7*"/>
-            <ColumnDefinition Width="257*"/>
-        </Grid.ColumnDefinitions>
+        <Menu Height="25" VerticalAlignment="Top" Grid.ColumnSpan="2">
+            <MenuItem Height="25" Header="File">
+                <MenuItem Header="Open" Click="MenuItem_Click_1"></MenuItem>
+                <MenuItem Header="Save"></MenuItem>
+                <Separator/>
+                <MenuItem Header="Exit" Click="MenuItem_Click"></MenuItem>
+            </MenuItem>
+        </Menu>
         <Button Content="Next" HorizontalAlignment="Left" Margin="78,460,0,0" VerticalAlignment="Top" Width="253" Height="79" Click="Button_Click" Grid.Column="1"/>
         <Button Content="Exit" HorizontalAlignment="Left" VerticalAlignment="Top" Width="157" Margin="743,460,0,0" Height="79" Click="Button_Click_1" Grid.Column="1"/>
-        <Image Source="\\sysprofiles.adm.vvsu.ru\STUDENTRPROFILES$\VanishevArkadiy\Downloads\5222036090377071390.jpg" HorizontalAlignment="Left" Height="421" Margin="220,23,0,0" VerticalAlignment="Top" Width="531" Grid.Column="1"/>
+        <Image Name="DisplayImage" HorizontalAlignment="Left" Height="385" Margin="220,59,0,0" VerticalAlignment="Top" Width="531" Grid.Column="1"/>
 
     </Grid>
 </Window>

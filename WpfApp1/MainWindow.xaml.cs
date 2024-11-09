@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Microsoft.Win32;
 
 namespace WpfApp1
 {
@@ -37,6 +38,25 @@ namespace WpfApp1
         {
             Application.Current.Shutdown();
 
+        }
+
+        private void MenuItem_Click(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Shutdown();
+        }
+
+        private void MenuItem_Click_1(object sender, RoutedEventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog { Filter = "Image Files| *.jpg; *.jpeg; *.png;" };
+            if (openFileDialog.ShowDialog() == true)
+            {
+                BitmapImage bitmapImage = new BitmapImage(new Uri(openFileDialog.FileName));
+                DisplayImage.Source = bitmapImage;
+            }
+            else
+            {
+                MessageBox.Show("Не выбрана картинка. ZZZZZZZZZZZZZZZZZZZZZZZZZzzz.");
+            }
         }
     }
 }
