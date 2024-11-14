@@ -19,6 +19,8 @@ namespace WpfApp1
     /// </summary>
     public partial class Window1 : Window
     {
+        private string _pass = "1243567890";
+        private string _inputPass = "";
         public Window1()
         {
             InitializeComponent();
@@ -30,6 +32,18 @@ namespace WpfApp1
             MainWindow window = new MainWindow();
             window.Show();
             this.Close();
+        }
+        private void Button_Click_2(object sender, RoutedEventArgs)
+        {
+            _inputPass = pswdTxt.Password;
+            if(_inputPass == _pass)
+            {
+                txtDisplay.Text = "Welcum.";
+            }
+            else
+            {
+                MessageBox.Show("Nope.");
+            }
         }
     }
 }

@@ -7,7 +7,11 @@
         mc:Ignorable="d"
         Title="Window1" Height="450" Width="800">
     <Grid>
-        <Button Content="Back" HorizontalAlignment="Left" Margin="300,146,0,0" VerticalAlignment="Top" Width="248" Height="128" Click="Button_Click"/>
+        <Button Content="Back" HorizontalAlignment="Left" Margin="600,356,0,0" VerticalAlignment="Top" Width="182" Height="57" Click="Button_Click"/>
+        <TextBlock Name="txtDisplay" FontSize="25" Margin="302,84,301,0" Foreground="Red" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="62"/>
+        <TextBox Name="usrTxt" FontSize="25" Height="62" Margin="302,185,301,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top"/>
+        <PasswordBox Name="pswdTxt" FontSize="25" HorizontalAlignment="Left" VerticalAlignment="Top" Height="44" Width="189" Margin="302,290,0,0"/>
+        <Button Content="Enter" FontSize="25" HorizontalAlignment="Left" Margin="530,290,0,0" VerticalAlignment="Top" Width="139" Height="44" Click="Button_Click_2"/>
 
     </Grid>
 </Window>
