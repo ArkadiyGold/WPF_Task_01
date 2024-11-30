@@ -17,7 +17,7 @@
         </Menu>
         <Button Content="Next" HorizontalAlignment="Left" Margin="78,460,0,0" VerticalAlignment="Top" Width="253" Height="79" Click="Button_Click" Grid.Column="1"/>
         <Button Content="Exit" HorizontalAlignment="Left" VerticalAlignment="Top" Width="157" Margin="743,460,0,0" Height="79" Click="Button_Click_1" Grid.Column="1"/>
-        <Image Name="DisplayImage" HorizontalAlignment="Left" Height="385" Margin="220,59,0,0" VerticalAlignment="Top" Width="531" Grid.Column="1"/>
+        <Button Content="Button" HorizontalAlignment="Left" Height="79" Margin="354,460,0,0" VerticalAlignment="Top" Width="323" Click="Button_Click_2"/>
 
     </Grid>
 </Window>

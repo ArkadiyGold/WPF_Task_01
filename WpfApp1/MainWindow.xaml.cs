@@ -28,7 +28,6 @@ namespace WpfApp1
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Hello world.");
             Window1 window = new Window1();
             window.Show();
             this.Close(); 
@@ -51,12 +50,19 @@ namespace WpfApp1
             if (openFileDialog.ShowDialog() == true)
             {
                 BitmapImage bitmapImage = new BitmapImage(new Uri(openFileDialog.FileName));
-                DisplayImage.Source = bitmapImage;
+
             }
             else
             {
                 MessageBox.Show("Не выбрана картинка. ZZZZZZZZZZZZZZZZZZZZZZZZZzzz.");
             }
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            Window3 window = new Window3();
+            window.Show();
+            this.Close();
         }
     }
 }

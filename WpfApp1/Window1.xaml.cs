@@ -33,7 +33,7 @@ namespace WpfApp1
             window.Show();
             this.Close();
         }
-        private void Button_Click_2(object sender, RoutedEventArgs)
+        private void Button_Click_2(object sender, RoutedEventArgs e)
         {
             _inputPass = pswdTxt.Password;
             if(_inputPass == _pass)
