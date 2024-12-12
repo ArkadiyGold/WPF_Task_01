@@ -60,7 +60,7 @@ namespace WpfApp1
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-            Window3 window = new Window3();
+            Window4 window = new Window4();
             window.Show();
             this.Close();
         }
